@@ -1,0 +1,9 @@
+---
+# tasks file for roles/docker_network
+
+- name: Create docker network "{{ docker_net }}"
+  docker_network:
+    name: "{{ docker_net }}"
+    ipam_config:
+      - subnet: "{{ subnet }}.0/{{ prefix }}"
+        gateway: "{{ subnet }}.254"

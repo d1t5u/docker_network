@@ -1,0 +1,6 @@
+---
+# defaults file for roles/docker_network
+
+docker_net: "my_network"
+subnet: "172.1.1"
+prefix: "24"
